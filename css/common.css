@@ -1,0 +1,24 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: rgb(17, 17, 17);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.c_wh {
+  color: white;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
