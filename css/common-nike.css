@@ -1,0 +1,31 @@
+body { font-family: 'Noto Sans KR';  font-size: 16px; line-height: 1.5; font-weight: 400; letter-spacing: normal; color:rgb(17,17,17); }
+
+/* Layout Style */
+
+
+/* Text Style */
+
+h1 {   }
+h2 { font-family: 'Noto Sans KR';  font-size: 24px; line-height: 28px; font-weight: 500; letter-spacing: normal; }
+h3 {   }
+h4 {  font-family: 'Noto Sans KR';  font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: normal;}
+h5 { }
+h6 { }
+
+p { font-family: 'Noto Sans KR';  font-size: 16px; line-height: 1.5; font-weight: 400; letter-spacing: normal; }
+
+.p_72 { font-family: 'Noto Sans KR'; font-size: 72px; line-height: 60px; font-weight: 400; }
+.p_20 { font-size: 20px; font-weight: 400; }
+.p_14 { font-size: 14px; font-weight: 400; }
+.p_14_tg { font-family: 'Noto Sans KR';  font-size: 14px; font-weight: 400; }
+.p_12 { font-size: 12px; font-weight: 400; }
+.p_10 { font-size: 10px;  font-weight: 400; }
+
+/* Color Style */
+
+.c_17 { color:rgb(17, 17, 17);}
+.c_117 { color:rgb(117, 117, 117);}
+.c_126 { color:rgb(126, 126, 126);}
+.c_245 { color:rgb(245, 245, 245);}
+.c_255 { color:rgb(255, 255, 255);}
+
