@@ -1,4 +1,4 @@
-/* Gnb header */
+/* -Gnb header- */
 
 .gnb-wrap {
   width: 100%;
@@ -129,7 +129,6 @@
 .gnb-down-menu li a {
   display: inline-block;
   line-height: 60px;
-  font-size: 16px;
   padding: 0 12px;
   transition: none;
 }
@@ -138,6 +137,11 @@
   border-bottom: 2px solid rgb(17, 17, 17);
 }
 
+/*- Main- */
+.main-full-wrap {
+  width: 100%;
+  height: auto;
+}
 /* Banner */
 .banner-wrap {
   width: 100%;
@@ -156,7 +160,65 @@
   line-height: 24px;
 }
 
-/* Footer */
+.visual-box {
+  width: 1808px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: flex;
+  color: white;
+}
+
+.visual-box-left {
+  width: 50%;
+  height: 900px;
+  background-image: url("../img/nike-just-do-it.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.visual-box-left-text {
+  width: 672px;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 0 36px 36px;
+}
+
+.visual-box-right {
+  width: 50%;
+  height: 900px;
+  background-image: url("../img/nike-just-do-it\ \(1\).png");
+}
+
+.visual-box-left h2 {
+  font-size: 72px;
+  line-height: 60px;
+  letter-spacing: -10px;
+  margin: 0 0 8px 0;
+}
+
+.visual-box-left-text a {
+  width: 93px;
+  margin: 24px 0 0;
+  padding: 8px 28px;
+  color: rgb(17, 17, 17);
+  background-color: white;
+  border-radius: 24px;
+}
+
+.visual-box-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.visual-box-right p {
+  margin: 0 36px 36px 0;
+}
+
+/* -Footer- */
 .footer-wrap {
   width: 100%;
   height: auto;

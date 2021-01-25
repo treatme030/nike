@@ -1,8 +1,8 @@
 body {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.75;
+  line-height: 1.5;
   color: rgb(17, 17, 17);
 }
 
@@ -21,4 +21,8 @@ a {
 
 .fs-12 {
   font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
 }
