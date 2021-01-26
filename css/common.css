@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Nike TG";
+  src: url(niketg.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Nike Futura";
+  src: url(nike-futura.woff2) format(woff2);
+}
+
 body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
