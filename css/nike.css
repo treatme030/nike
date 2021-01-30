@@ -1,435 +1,426 @@
-/* -Gnb header- */
-
-.gnb-wrap {
+header {
   width: 100%;
   height: auto;
 }
 
-.gnb-wrap svg:hover {
-  fill: rgb(150, 150, 150);
+.gnb {
+  width: 100%;
+  height: 96px;
 }
 
-.gnb-up {
+/* Gnb-Upper */
+
+.gnb-upper {
   width: 100%;
   height: 36px;
+  background-color: rgb(245, 245, 245);
   padding: 0 38px 0 36px;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(245, 245, 245);
 }
 
-.gnb-up ul {
+.gnb-upper-brand {
+  height: 100%;
+  display: flex;
+}
+
+.gnb-down-left,
+.gnb-down-right {
+  width: 340px;
+}
+
+.gnb-upper-brand li a {
+  line-height: 100%;
+  display: inline-block;
+  padding: 6px 12px;
+}
+/* 이미지를 중간에 위치하려면 이미지에 vertical-align: middle;로 하고 <a>를 인라인블럭 속성으로 변경한 뒤에  <a> 위아래 padding을 준다 */
+.gnb-upper-brand svg {
+  vertical-align: middle;
+}
+
+.gnb-upper-brand svg:hover {
+  fill: rgb(150, 150, 150);
+}
+
+.gnb-upper-usermenu {
   display: flex;
   align-items: center;
 }
 
-.gnb-up a {
-  display: flex;
-  align-items: center;
-  height: 36px;
-  padding: 0 12px;
+.gnb-upper-usermenu li {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
-.gnb-up-right a {
+.gnb-upper-usermenu li a {
   padding: 0 8px;
+  color: rgb(17, 17, 17);
 }
 
-.gnb-up-right a:hover {
+.gnb-upper-usermenu li a:hover {
   color: rgb(150, 150, 150);
 }
 
-.gnb-up-right span {
-  margin: 0 4px;
-}
+/* Gnb-Down */
 
 .gnb-down {
   width: 100%;
   height: 60px;
   padding: 0 38px 0 36px;
-  position: relative;
-}
-
-.gnb-down-icons {
-  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.gnb-down-icons-logo a {
-  display: inline-block;
-  height: 60px;
+.gnb-down-left a {
   padding: 0 12px;
+  display: inline-block;
+  height: 100%;
 }
 
-.gnb-down-icons-right {
+.gnb-down-left a svg:hover {
+  fill: rgb(150, 150, 150);
+}
+
+.gnb-down-mainmenu {
   display: flex;
+}
+
+.gnb-down-mainmenu li a {
+  color: rgb(17, 17, 17);
+  display: inline-block;
+  padding: 18px 12px;
+}
+
+.gnb-down-mainmenu li a:hover {
+  border-bottom: 2px solid rgb(17, 17, 17);
+}
+
+.gnb-down-right {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.gnb-down-icons-right img {
+.gnb-down-right li {
+  margin: 0 6px;
+}
+
+.gnb-down-right li a svg {
+  vertical-align: middle;
   width: 24px;
   height: 24px;
 }
 
-.gnb-down-icons-right-search {
-  display: flex;
-  align-items: center;
+.gnb-down-right li:nth-child(1) {
   width: 180px;
   height: 40px;
-  font-size: 16px;
+  padding: 0 6px;
+  border-radius: 20px;
   background-color: rgb(245, 245, 245);
-  border-radius: 18px;
-  margin: 0 20px 0 0;
 }
 
-.gnb-down-icons-right-search a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 8px;
-  margin: 0 5px 0 0;
+.gnb-down-right li:nth-child(1):hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.gnb-down-right li:nth-child(3) {
+  margin: 0 0 0 6px;
+}
+
+.gnb-down-right li:nth-child(2) a:hover,
+.gnb-down-right li:nth-child(3) a:hover {
+  background-color: rgb(200, 200, 200);
   border-radius: 50%;
 }
 
-.gnb-down-icons-right-search p {
-  color: rgba(0, 0, 0, 0.1);
-}
-
-.gnb-down-icons-right-acct {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px;
-  border-radius: 50%;
-}
-
-.gnb-down-icons-right li:nth-child(2) {
-  margin: 0 12px 0 0;
-}
-
-.gnb-down-icons-right a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.gnb-down-menu {
-  position: absolute;
-  width: calc(100% - 680px);
-  height: 100%;
-  top: 0;
-  left: 340px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gnb-down-menu li {
-  height: 100%;
-}
-.gnb-down-menu li a {
+.gnb-down-right li a {
   display: inline-block;
-  line-height: 60px;
-  padding: 0 12px;
-  transition: none;
-}
-
-.gnb-down-menu li a:hover {
-  border-bottom: 2px solid rgb(17, 17, 17);
-}
-
-/*- Main- */
-.main-full-wrap {
-  width: 100%;
-  height: auto;
-}
-/* Banner */
-.banner-wrap {
-  width: 100%;
-  height: auto;
-  min-height: 58px;
-  text-align: center;
-  padding: 10px 0 6px 0;
-  background-color: rgb(245, 245, 245);
-  box-shadow: inset 0 -1px 0 0 #e5e5e5;
-}
-.banner-wrap div {
-  line-height: 14px;
-}
-.banner-wrap p a {
-  text-decoration-line: underline;
+  padding: 6px;
   line-height: 24px;
+  color: rgb(150, 150, 150);
 }
 
-.visual-box1 {
-  width: 1808px;
+/* Main */
+/* 메인 전체를 <div>로 싸고 시작!!! */
+
+main {
+  width: 100%;
   height: auto;
-  margin: 0 auto;
-  padding: 0 8px;
-  display: flex;
-  color: white;
 }
 
-.visual-box1-left {
-  width: 50%;
+/* Main banner */
+
+.main-banner {
+  width: 100%;
+  height: 58px;
+  padding: 10px 0 0 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.main-banner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-banner-info span {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.main-banner-info a {
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgb(17, 17, 17);
+}
+
+/* Main visual-1 */
+
+.main-visual-1 {
+  width: 100%;
   height: 900px;
+  padding: 0 55.5px;
+  display: flex;
+  flex-wrap: nowrap;
+  color: rgb(255, 255, 255);
+}
+
+.cover-pointer:hover {
+  cursor: pointer;
+}
+
+.main-visual-1-left {
+  width: 50%;
   background-image: url("../img/nike-just-do-it.png");
   display: flex;
   align-items: flex-end;
 }
 
-.visual-box1-left-text {
-  width: 672px;
-  height: 155px;
+.main-visual-1-right {
+  width: 50%;
+  background-image: url("../img/nike-just-do-it\ \(1\).png");
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
+}
+
+.main-visual-1-text-l {
   margin: 0 0 36px 36px;
 }
 
-.visual-box1-right {
-  width: 50%;
-  height: 900px;
-  background-image: url("../img/nike-just-do-it\ \(1\).png");
-}
-
-.visual-box1-left p:nth-child(1) {
+.main-visual-1-text-l p:nth-child(1) {
   margin: 0 0 8px 0;
   font-family: "Nike Futura";
 }
 
-.visual-box1-left-text a {
-  width: 93px;
-  margin: 24px 0 0;
-  padding: 8px 28px;
-  color: rgb(17, 17, 17);
-  background-color: white;
-  border-radius: 24px;
-}
-
-.visual-box1-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.visual-box1-right p {
+.main-visual-1-right p {
   margin: 0 36px 36px 0;
 }
 
-.visual-box2,
-.visual-box6 {
+/* Main visual-2 */
+
+.main-visual-2 {
   width: 100%;
-  height: auto;
-  margin: 84px 0 0 0;
-}
-
-.visual-box2 h2,
-.visual-box6 h2 {
-  width: 1792px;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-
-.visual-box2-item,
-.visual-box6-item {
-  width: 1792px;
   height: 718px;
-  margin: 0 auto;
+  margin-top: 84px;
+  padding: 0 48px;
+}
+/*width를 100%로 하고 양옆에 padding을 주면 브라우저 크기에 따라 유동적으로 크기 변경됨*/
+
+.main-visual-2 h2 {
+  margin: 0 0 24px 0;
+}
+
+.main-visual-2-item {
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
-.visual-box2-item li,
-.visual-box6-item li {
+.main-visual-2-item li {
   width: 33%;
 }
 
-.visual-box2-item li:nth-child(2),
-.visual-box6-item li:nth-child(2) {
-  margin: 0 16px;
+.main-visual-2-item li a {
+  color: rgb(17, 17, 17);
 }
-.visual-box2-item li a img {
+
+.main-visual-2-item li img {
   width: 100%;
 }
 
-.visual-box2-item .item-info,
-.visual-box6-item .item-info {
+.main-visual-2-item li:nth-child(2) {
+  margin: 0 16px;
+}
+
+.main-visual-2-item .item-info {
   display: flex;
   justify-content: space-between;
   margin: 12px 16px 0 0;
 }
 
-.visual-box2-item li a,
-.visual-box6-item li a {
-  color: rgb(17, 17, 17);
-}
+/* Main visual -3 */
 
-.visual-box3-wrap,
-.visual-box5-wrap {
-  width: 1808px;
+.main-visual-3 {
+  width: 100%;
   height: 752px;
-  margin: 0 auto;
   margin-top: 84px;
-  padding: 0 8px;
+  padding: 0 48px;
 }
 
-.visual-box3-wrap h2,
-.visual-box5-wrap h2 {
+.main-visual-3 h2 {
   margin: 0 0 24px 0;
 }
 
-.visual-box3,
-.visual-box5 {
+.main-visual-3-item {
+  height: 700px;
+  display: flex;
+}
+
+.main-visual-3-item-l {
+  width: 50%;
+  height: 700px;
+  margin: 0 16px 0 0;
+  background-image: url("../img/nike-just-do-it\ \(1\).jpg");
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-visual-3-item-r {
+  width: 50%;
+  height: 700px;
+  background-image: url("../img/nike-just-do-it\ \(2\).jpg");
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.main-visual-3-text {
+  margin: 0 0 36px 36px;
+}
+
+/* Main visual-4 */
+
+.main-visual-4 {
+  width: 100%;
+  height: 752px;
+  margin-top: 84px;
+  padding: 0 48px;
+}
+
+.main-visual-4 h2 {
+  margin: 0 0 24px 0;
+}
+
+.main-visual-4-img {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/nike-just-do-it\ \(3\).jpg");
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.main-visual-4-text {
+  margin: 0 0 36px 36px;
+}
+
+.main-visual-4-text p:nth-child(1) {
+  margin: 0 0 8px 0;
+  font-family: "Nike Futura";
+}
+
+/* Main visual-5 */
+
+.main-visual-5 {
+  width: 100%;
+  height: 752px;
+  margin-top: 84px;
+  padding: 0 48px;
+}
+
+.main-visual-5 h2 {
+  margin: 0 0 24px 0;
+}
+
+.main-visual-5-item {
+  height: 700px;
+  display: flex;
+}
+
+.main-visual-5-item-l {
+  width: 50%;
+  height: 700px;
+  margin: 0 16px 0 0;
+  background-image: url("../img/nike-just-do-it\ \(4\).jpg");
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.main-visual-5-item-r {
+  width: 50%;
+  height: 700px;
+  background-image: url("../img/nike-just-do-it\ \(5\).jpg");
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.main-visual-5-text {
+  margin: 0 0 36px 36px;
+}
+
+/* Main visual-6 */
+
+.main-visual-6 {
+  width: 100%;
+  height: 833px;
+  margin-top: 84px;
+  padding: 0 48px;
+}
+
+.main-visual-6 h2 {
+  margin: 0 0 24px 0;
+}
+
+.main-visual-6-item {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: nowrap;
 }
 
-.visual-box3-left,
-.visual-box5-left {
-  width: 50%;
-  height: 700px;
-  padding: 0 8px;
-  margin: 0 16px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.main-visual-6-item li {
+  width: 33%;
 }
 
-.visual-box3-left {
-  background-image: url("../img/nike-just-do-it\ \(1\).jpg");
-}
-
-.visual-box3-right,
-.visual-box5-right {
-  width: 50%;
-  height: 700px;
-  padding: 0 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.visual-box3-right {
-  background-image: url("../img/nike-just-do-it\ \(2\).jpg");
-}
-
-.visual-box3-text-left,
-.visual-box5-text-right {
-  width: 666px;
-  height: 88px;
-  margin: 0 0 36px 36px;
-}
-
-.visual-box3-text-left p,
-.visual-box3-text-right p {
-  margin-bottom: 8px;
-}
-
-.visual-box3-text-left a,
-.visual-box5-text-right a {
-  display: inline-block;
-  width: 93px;
-  height: 40px;
-  margin: 24px 0 0;
-  padding: 8px 28px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(17, 17, 17);
-  border-radius: 24px;
-}
-
-.visual-box3-text-right,
-.visual-box5-text-left {
-  width: 666px;
-  height: 112px;
-  margin: 0 0 36px 36px;
-}
-
-.visual-box3-text-right a,
-.visual-box5-text-left a {
-  display: inline-block;
-  width: 93px;
-  height: 40px;
-  margin: 24px 0 0;
-  padding: 8px 28px;
+.main-visual-6-item li a {
   color: rgb(17, 17, 17);
-  background-color: rgb(255, 255, 255);
-  border-radius: 24px;
 }
 
-.visual-box4-wrap {
-  width: 1808px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 84px;
-  padding: 0 8px;
-}
-
-.visual-box4-wrap h2 {
-  margin: 0 0 24px 0;
-}
-
-.visual-box4 {
+.main-visual-6-item li img {
   width: 100%;
-  height: 752px;
-  display: flex;
-  align-items: flex-end;
-  background-image: url("../img/nike-just-do-it\ \(3\).jpg");
 }
 
-.visual-box4-text {
-  width: 672px;
-  height: 155px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 0 0 36px 36px;
+.main-visual-6-item li:nth-child(2) {
+  margin: 0 16px;
 }
 
-.visual-box4-text p:nth-child(1) {
-  margin: 0 0 8px 0;
-}
-
-.visual-box4-text a {
-  width: 93px;
-  margin: 24px 0 0;
-  padding: 8px 28px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(17, 17, 17);
-  border-radius: 24px;
-}
-
-.visual-box5-left {
-  background-image: url("../img/nike-just-do-it\ \(4\).jpg");
-}
-
-.visual-box5-right {
-  background-image: url("../img/nike-just-do-it\ \(5\).jpg");
-}
-
-.visual-box6 {
-  height: 833px;
-}
-
-.visual-box6-item {
-  height: 781px;
-}
+/* Membership */
 
 .membership-wrap {
-  width: 1808px;
+  max-width: 1808px;
   height: 500px;
   margin: 0 auto;
   margin-top: 84px;
   padding: 0 8px;
 }
 
-.membership-img .membership-pointer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
 .membership-img {
-  position: relative;
   height: 100%;
   background-image: url("../img/nike-just-do-it.jpg");
   display: flex;
@@ -443,17 +434,8 @@
   margin: 0 0 36px 0;
 }
 
-.membership-img ul li a {
-  display: inline-block;
-  width: 110px;
-  line-height: 40px;
-  text-align: center;
-  margin: 6px 6px 0 0;
-  background-color: rgb(17, 17, 17);
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-}
 /* -Footer- */
+
 .footer-wrap {
   width: 100%;
   height: auto;
@@ -463,7 +445,7 @@
 }
 
 .footer {
-  width: 1440px;
+  max-width: 1440px; /* 브라우저 크기에 따라 유동적으로 크기 변화*/
   height: auto;
   margin: 0 auto;
   padding: 40px 40px 0 40px;
@@ -496,8 +478,11 @@
 }
 
 .footer-info-1 a,
-.footer-info-left .c-wh {
-  color: white;
+.footer-info-left .c_255 {
+  color: rgb(255, 255, 255);
+  font-family: "Nike TG";
+  font-weight: bolder;
+  font-stretch: 100%;
 }
 
 .footer-info-right span {
@@ -509,7 +494,7 @@
 }
 
 .footer-info-right a:hover svg {
-  fill: white;
+  fill: rgb(255, 255, 255);
 }
 
 .sub-footer {
@@ -547,7 +532,7 @@
 }
 
 .footer-wrap a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .sub-footer-right li a {
