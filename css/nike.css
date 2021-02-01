@@ -225,9 +225,11 @@ main {
 
 .main-visual-2 {
   width: 100%;
-  height: 718px;
+  height: 728px;
   margin-top: 84px;
   padding: 0 48px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 /*width를 100%로 하고 양옆에 padding을 주면 브라우저 크기에 따라 유동적으로 크기 변경됨*/
 
@@ -243,6 +245,7 @@ main {
 
 .main-visual-2-item li {
   width: 33%;
+  flex-shrink: 0; /*아이템 수가 많을 경우 아이템들이 넓이가 축소되어 박스 안에 나타나는데~아이템들이 원래 가지고 있던 넓이를 잃지 않도록 해줌*/
 }
 
 .main-visual-2-item li a {
@@ -251,10 +254,11 @@ main {
 
 .main-visual-2-item li img {
   width: 100%;
+  vertical-align: middle;
 }
 
-.main-visual-2-item li:nth-child(2) {
-  margin: 0 16px;
+.main-visual-2-item li {
+  margin: 0 16px 0 0;
 }
 
 .main-visual-2-item .item-info {
@@ -434,6 +438,43 @@ main {
   margin: 0 0 36px 0;
 }
 
+/* Item list */
+
+.Main-item {
+  margin: 84px 0 0 0;
+  padding: 0 511px 56px;
+  display: flex;
+  justify-content: space-between;
+  height: 190px;
+  overflow: hidden;
+  transition: 0.3s;
+  margin-bottom: 56px;
+}
+
+.Main-item:hover {
+  height: 700px;
+  margin: 84px 0 0 0;
+}
+
+.Main-item ul h4 {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Main-item ul li {
+  margin: 0 0 12px 0;
+}
+
+.Main-item ul li a {
+  display: inline-block;
+  color: rgb(126, 126, 126);
+  font-weight: 500;
+}
+
+.Main-item ul li a:hover {
+  color: rgb(17, 17, 17);
+}
 /* -Footer- */
 
 .footer-wrap {
@@ -481,8 +522,6 @@ main {
 .footer-info-left .c_255 {
   color: rgb(255, 255, 255);
   font-family: "Nike TG";
-  font-weight: bolder;
-  font-stretch: 100%;
 }
 
 .footer-info-right span {

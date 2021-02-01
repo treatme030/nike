@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Nike TG";
-  src: url(../font/niketg.woff2) format("woff2");
+  src: url(../font/257c802f-349c-4b4d-aefa-546d5de15ec6.woff2) format("woff2");
 }
 
 @font-face {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
